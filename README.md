@@ -6,7 +6,6 @@ def main(page: ft.Page):
     g = 0
     b = 0
  
-    #Functions
     def rgb_to_hex(r, g, b):
         return f"#{r:02x}{g:02x}{b:02x}"
    
@@ -18,11 +17,9 @@ def main(page: ft.Page):
  
         boxcolor.bgcolor = rgb_to_hex(r, g, b)
  
-    #Main Page
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
  
-    #Controls
     slider1 = ft.Slider(label="Slider", value = 0, max = 255, on_change = update_color)
     slider2 = ft.Slider(label="Slider", value = 0, max = 255, on_change = update_color)
     slider3 = ft.Slider(label="Slider", value = 0, max = 255, on_change = update_color)
